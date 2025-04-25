@@ -3,7 +3,7 @@ authors = ["hydroperx"]
 language = "en"
 multilingual = false
 src = "src"
-title = "New Basic reference"
+title = "Jet™ documentation"
 
 [output.html.fold]
 enable = true

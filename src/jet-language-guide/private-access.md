@@ -5,6 +5,7 @@ You can use Jet namespaces to privatize definitions across class fields and acce
 ```
 // my_lib_internals.jet
 package my.lib {
+    /** @private */
     public namespace my_lib_internals = "http://my.lib/internals";
 }
 
@@ -13,6 +14,7 @@ package my.lib.atoms {
     import my.lib.*;
 
     public class Atom {
+        /** @private */
         my_lib_internals var x:Number = 10;
     }
 }

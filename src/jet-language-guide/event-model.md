@@ -2,6 +2,8 @@
 
 The native `EventEmitter` class is designated for dispatching and listening to events, and is the one used for implementing the event model in the display list API.
 
+In addition, the `IEventEmitter` interface may be implemented instead of extending the `EventEmitter` class.
+
 ## Defining an event emitter
 
 ```
@@ -30,7 +32,7 @@ class CN extends EventEmitter {
 The `EventEmitter#emit()` method is defined as follows:
 
 ```
-public function emit.<E extends "event:object/this">() : Boolean {
+public function emit.<E extends "event:object/this">(e:E) : Boolean {
     // code
 }
 ```

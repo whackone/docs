@@ -62,6 +62,8 @@ uint // unsigned 32-bit integer
 
 ## Tuple
 
+Tuples, when untyped, have the `length` property available.
+
 ```
 [T1, T2]
 ```
@@ -74,7 +76,9 @@ The `Array` type represents a dynamic list of elements, optimized for when `T` i
 [T]
 ```
 
-## Function
+## Structural function
+
+Structural function types inherit from `Function`.
 
 ```
 function(T1, T2=, ...T3):E
@@ -128,4 +132,6 @@ A single `...rest` component may appear as the last item, where `rest` must be a
 
 ## Objects
 
-All types except `void`, `null`, `uint`, `int`, `float`, `Number` and `Boolean` represent referenceable objects. The `Object` class is inherited from all types, except `*`, `void` and `null`, which are not classes.
+All types except `void`, `null`, `uint`, `int`, `float`, `Number` and `Boolean` represent referenceable objects that may be `null`. The `Object` class is inherited from all types, except `*`, `void`, `null` and unions, which are not classes themselves.
+
+The `Object` class, unlike in standard ActionScript, is not untyped and there is no support for `dynamic` classes; therefore, it is preferable to use the `*` type when it is necessary to access prototype properties such as `constructor` and `toString()`.

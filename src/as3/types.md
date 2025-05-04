@@ -6,6 +6,12 @@
 void // undefined
 ```
 
+## null
+
+```
+null // null
+```
+
 ## String
 
 String is a UTF-8 encoded sequence of characters.

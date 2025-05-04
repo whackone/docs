@@ -1,4 +1,8 @@
-# Private access
+# Namespaces
+
+ActionScript 3 uses three-dimensional property names: a property consists of a namespace and a local name.
+
+## Private access
 
 You can use ActionScript namespaces to privatize definitions across class fields and access them from any package as long as the used namespace is in scope:
 

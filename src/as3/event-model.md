@@ -23,6 +23,18 @@ class CN extends EventEmitter {
 }
 ```
 
+## Defining event objects
+
+Event constructors must always take the event type as the first argument; any other arguments may follow.
+
+```
+class SomeEvent extends Event {
+    public function SomeEvent(type: String) {
+        super(type);
+    }
+}
+```
+
 ## Emitting
 
 The `EventEmitter#emit()` method is defined as follows:

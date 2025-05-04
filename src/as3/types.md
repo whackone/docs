@@ -132,6 +132,6 @@ A single `...rest` component may appear as the last item, where `rest` must be a
 
 ## Objects
 
-All types except `void`, `null`, `uint`, `int`, `float`, `Number` and `Boolean` represent referenceable objects that may be `null`. The `Object` class is inherited from all types, except `*`, `void`, `null` and unions, which are not classes themselves.
+All types except `void`, `null`, `uint`, `int`, `float`, `Number` and `Boolean` represent referenceable objects that may be `null`. The `Object` class is inherited by all types, except `*`, `void`, `null` and unions.
 
 The `Object` class, unlike in standard ActionScript, is not untyped and there is no support for `dynamic` classes; therefore, it is preferable to use the `*` type when it is necessary to access prototype properties such as `constructor` and `toString()`.

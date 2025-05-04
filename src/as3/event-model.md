@@ -1,6 +1,6 @@
 # Event model
 
-The native `EventEmitter` class is designated for dispatching and listening to events, and is the one used for implementing the event model in the display list API.
+The native `EventEmitter` class is designated for dispatching and listening to events, and is the one used for implementing the hierarchic event model in the display list API.
 
 In addition, the `IEventEmitter` interface may be implemented instead of extending the `EventEmitter` class.
 
@@ -9,20 +9,16 @@ In addition, the `IEventEmitter` interface may be implemented instead of extendi
 ```
 /** Event "play". */
 [Event(name="play", type="Event")]
-/**
- * The CN class.
- */
+/** The CN class. */
 class CN extends EventEmitter {
     // constructor
     public function CN() {
-        on("play", function() {
-            trace("played");
-        });
+        this.on("play", function() { trace("played"); });
     }
 
     // a_method
     public function a_method() {
-        emit(new Event("play"));
+        this.emit(new Event("play"));
     }
 }
 ```
@@ -32,7 +28,7 @@ class CN extends EventEmitter {
 The `EventEmitter#emit()` method is defined as follows:
 
 ```
-public function emit.<E extends "event:object/this">(e:E) : Boolean {
+public function emit.<E extends this.MetaEvents::object>(e:E) : Boolean {
     // code
 }
 ```
@@ -42,7 +38,7 @@ public function emit.<E extends "event:object/this">(e:E) : Boolean {
 The `EventEmitter#on()` method is roughly defined as follows:
 
 ```
-public function on.<E extends "event:type/this">(
+public function on.<E extends this.MetaEvents::type>(
     type: E.name,
     listener: function(E.type):void,
 ) : void {

@@ -1,15 +1,15 @@
 # Private access
 
-You can use Jet namespaces to privatize definitions across class fields and access them from any package as long as the used namespace is in scope:
+You can use ActionScript namespaces to privatize definitions across class fields and access them from any package as long as the used namespace is in scope:
 
 ```
-// my_lib_internals.jet
+// my_lib_internals.as
 package my.lib {
     /** @private */
     public namespace my_lib_internals = "http://my.lib/internals";
 }
 
-// Atom.jet
+// Atom.as
 package my.lib.atoms {
     import my.lib.*;
 
@@ -19,7 +19,7 @@ package my.lib.atoms {
     }
 }
 
-// consumer.jet
+// consumer.as
 import my.lib.*;
 import my.lib.atoms.*;
 

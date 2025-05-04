@@ -5,4 +5,4 @@
   - [Event model](./as3/event-model.md)
   - [Private access](./as3/private-access.md)
 - [Display list](./display-list.md)
-  - [Points](./display-list/points.md)
+  - [Points and scale factor](./display-list/points.md)

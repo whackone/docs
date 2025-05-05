@@ -79,7 +79,7 @@ The `Array` type represents a dynamic list of elements, optimized for when `T` i
 Structural function types inherit from `Function`.
 
 ```
-function(T1, T2=, ...T3):E
+function(T1, T2=, ...[T3]):E
 ```
 
 ## Union

@@ -10,7 +10,7 @@
 html {
     font-family: var(--font);
     color: var(--fg);
-    background: linear-gradient(-180deg,#6e6e95 0,#454545 35%) fixed;
+    background: linear-gradient(-180deg,#906e95 0,#454545 35%) fixed;
     text-size-adjust: none;
     -webkit-text-size-adjust: none;
 }

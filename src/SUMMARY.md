@@ -18,5 +18,7 @@
     - [Import](./as3/statements/import.md)
     - [Switch](./as3/statements/switch.md)
     - [Try](./as3/statements/try.md)
+  - [Expressions](./as3/expressions.md)
+    - [String literal](./as3/expressions/string.md)
 - [Display list](./display-list.md)
   - [Points and scale factor](./display-list/points.md)

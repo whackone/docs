@@ -19,3 +19,67 @@ class A {
     public function A() {}
 }
 ```
+
+## Abstract classes
+
+```
+abstract class A {
+    abstract function m():void;
+}
+```
+
+## Static classes
+
+```
+static class Namespace {
+    public static const VALUE:Number = 10.5;
+}
+```
+
+## Final classes
+
+```
+final class A {}
+
+class B extends A {} // ERROR!
+```
+
+## Override
+
+```
+class A {
+    function m() {}
+}
+
+class B extends A {
+    override function m() { trace("B!") }
+}
+```
+
+## Final method
+
+```
+class A {
+    final function m() {}
+}
+
+class B extends A {
+    override function m() { trace("B!") } // ERROR!
+}
+```
+
+## Super
+
+```
+class A {
+    function A() { trace("A!") }
+
+    function m() { trace("A.m!") }
+}
+
+class B extends A {
+    function B() { super(); trace("B!") }
+
+    override function m() { super.m(); trace("B.m!") }
+}
+```

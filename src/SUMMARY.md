@@ -17,5 +17,6 @@
     - [Import](./as3/statements/import.md)
     - [Switch](./as3/statements/switch.md)
     - [Try](./as3/statements/try.md)
+- [MXML language guide](./mxml.md)
 - [Display list](./display-list.md)
   - [Points and scale factor](./display-list/points.md)

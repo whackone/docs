@@ -7,7 +7,7 @@
   - [Type conversion](./as3/type-conversion.md)
   - [Classes](./as3/classes.md)
   - [Namespaces](./as3/namespaces.md)
-  - [Event model](./as3/event-model.md)
+  - [Events](./as3/events.md)
   - [Environment and target](./as3/environment.md)
   - [Embed](./as3/embed.md)
 - [Display list](./display-list.md)

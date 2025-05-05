@@ -1,10 +1,10 @@
-# Event model
+# Events
 
 The native `EventEmitter` class is designated for dispatching and listening to events, and is the one used for implementing the hierarchic event model in the display list API.
 
 In addition, the `IEventEmitter` interface may be implemented instead of extending the `EventEmitter` class.
 
-## Defining an event emitter
+## An event emitter
 
 ```
 /**
@@ -27,7 +27,7 @@ class CN extends EventEmitter {
 }
 ```
 
-## Defining event objects
+## Event classes
 
 Event constructors must always take the event type as the first argument; any other arguments may follow.
 

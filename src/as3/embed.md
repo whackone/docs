@@ -3,7 +3,7 @@
 The `Embed()` expression may be used for embedding static media into the program.
 
 ```
-const text: String = Embed("data.txt");
+const text : String = Embed("data.txt");
 ```
 
 > **Note**: In Flash Player, an `[Embed]` meta-data was used in definitions in order to embed static files; this is not the case with Jet engine.

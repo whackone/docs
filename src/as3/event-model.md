@@ -6,7 +6,7 @@ In addition, the `IEventEmitter` interface may be implemented instead of extendi
 
 ## Defining an event emitter
 
-```
+```as3
 /** Event "play". */
 [Event(name="play", type="Event")]
 /** The CN class. */
@@ -44,6 +44,8 @@ public function emit.<E extends this.MetaEvents::object>(e:E) : Boolean {
     // code
 }
 ```
+
+When the `emit()` method is used, it will force a `new E(...)` expression to be a correct `Event` object construction, by ensuring the first argument identifies a determined event type according to `E`.
 
 ## Adding listeners
 

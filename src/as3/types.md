@@ -36,14 +36,34 @@ Boolean // false or true
 
 ## Number
 
+IEEE 754 double-precision floating point.
+
 ```
-Number // double-precision floating point
+Number
+```
+
+## BigInt
+
+Big integer.
+
+```
+BigInt
 ```
 
 ## float
 
+IEEE 754 single-precision floating point.
+
 ```
-float // single-precision floating point
+float
+```
+
+## decimal
+
+IEEE 754 quadruple-precision floating point (binary128).
+
+```
+decimal
 ```
 
 ## int
@@ -132,6 +152,6 @@ type W = { z:Number };
 
 ## Objects
 
-All types except `void`, `null`, `uint`, `int`, `float`, `Number` and `Boolean` represent referenceable objects that may be `null`. The `Object` class is inherited by all types, except `*`, `void`, `null` and unions.
+All types except `void`, `null`, `uint`, `int`, `float`, `Number`, `decimal`, `BigInt` and `Boolean` represent referenceable objects that may be `null`. The `Object` class is inherited by all types, except `*`, `void`, `null` and unions.
 
 The `Object` class, unlike in standard ActionScript, is not untyped and there is no support for `dynamic` classes; therefore, it is preferable to use the `*` type when it is necessary to access prototype properties such as `constructor` and `toString()`.

@@ -15,12 +15,16 @@ In addition, the `IEventEmitter` interface may be implemented instead of extendi
  * The CN class.
  */
 class CN extends EventEmitter {
-    // constructor
+    /**
+     * Constructs a `CN` object.
+     */
     public function CN() {
         this.on("play", function() { trace("played"); });
     }
 
-    // a_method
+    /**
+     * A method.
+     */
     public function a_method() {
         this.emit(new Event("play"));
     }

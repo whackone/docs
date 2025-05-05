@@ -105,6 +105,8 @@ fns.m = function() { return 10 };
 trace(fns.call("m"));
 ```
 
+> **Note:** Property access on a `Map` equals data access. Method call on a `Map` equals `Map` method use.
+
 ## Structural object
 
 Structural object types are compiled into efficient structures.

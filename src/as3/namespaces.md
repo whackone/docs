@@ -9,7 +9,9 @@ You can use ActionScript namespaces to privatize definitions across class fields
 ```
 // my_lib_internals.as
 package my.lib {
-    /** @private */
+    /**
+     * @private
+     */
     public namespace my_lib_internals = "http://my.lib/internals";
 }
 
@@ -18,7 +20,9 @@ package my.lib.atoms {
     import my.lib.*;
 
     public class Atom {
-        /** @private */
+        /**
+         * @private
+         */
         my_lib_internals var x:Number = 10;
     }
 }

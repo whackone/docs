@@ -8,7 +8,7 @@
 }
 
 html {
-    font-family: Cambria, Palatino Linotype, Palatino, Liberation Serif, serif;
+    font-family: "EB Garamond", Cambria, Palatino Linotype, Palatino, "Liberation Serif", serif;
     color: var(--fg);
     background: linear-gradient(-180deg,#6e6e95 0,#454545 35%) fixed;
     text-size-adjust: none;
@@ -17,7 +17,7 @@ html {
 
 body {
     margin: 0;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     overflow-x: hidden;
 }
 

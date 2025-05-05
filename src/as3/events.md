@@ -27,7 +27,7 @@ class CN extends EventEmitter {
 }
 ```
 
-## Event classes
+## An event class
 
 Event constructors must always take the event type as the first argument; any other arguments may follow.
 
@@ -52,7 +52,7 @@ public function emit.<E extends this.Event::object>(e:E) : Boolean {
 
 When the `emit()` method is used, it will force a `new E(...)` expression to be a correct `Event` object construction, by ensuring the first argument identifies a determined event type according to `E`.
 
-## Adding listeners
+## Listening
 
 The `EventEmitter#on()` method is roughly defined as follows:
 

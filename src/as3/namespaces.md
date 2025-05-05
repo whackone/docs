@@ -7,12 +7,12 @@ ActionScript 3 uses three-dimensional property names: a property consists of a n
 You can use ActionScript namespaces to privatize definitions across class fields and access them from any package as long as the used namespace is in scope:
 
 ```
-// my_lib_internals.as
+// MyLibInternals.as
 package my.lib {
     /**
      * @private
      */
-    public namespace my_lib_internals = "http://my.lib/internals";
+    public namespace MyLibInternals = "http://my.lib/internals";
 }
 
 // Atom.as
@@ -23,7 +23,7 @@ package my.lib.atoms {
         /**
          * @private
          */
-        my_lib_internals var x:Number = 10;
+        MyLibInternals var x:Number = 10;
     }
 }
 
@@ -32,5 +32,5 @@ import my.lib.*;
 import my.lib.atoms.*;
 
 const atom = new Atom();
-trace(atom.my_lib_internals::x);
+trace(atom.MyLibInternals::x);
 ```

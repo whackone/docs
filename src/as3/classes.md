@@ -5,9 +5,7 @@
 By default a class extends `Object`. Use the `extends` clause for extending a specific class:
 
 ```
-class B extends A {
-    // block
-}
+class B extends A {}
 ```
 
 ## Constructor
@@ -18,8 +16,6 @@ Define a constructor for a class using its name in a function definition:
 
 ```
 class A {
-    public function A() {
-        // constructor
-    }
+    public function A() {}
 }
 ```

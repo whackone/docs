@@ -8,28 +8,27 @@ In addition, the `IEventEmitter` interface may be implemented instead of extendi
 
 ```
 /**
- * Event "play".
+ * On play event.
  */
 [Event(name="play", type="Event")]
 /**
- * The CN class.
+ * My player class.
  */
-class CN extends EventEmitter {
-    /**
-     * Constructs a `CN` object.
-     */
-    public function CN() {
-        this.on("play", function() { trace("played"); });
-    }
+class Player extends EventEmitter {
 
-    /**
-     * A method.
-     */
-    public function a_method() {
+    public function aMethod() {
         this.emit(new Event("play"));
     }
 }
 ```
+
+`Player` usage:
+
+```
+player.on("play", function() { trace("played") });
+```
+
+> **Note:** Unlike in Flash Player, the convention of using static constants for identifying event types is discarded.
 
 ## An event class
 

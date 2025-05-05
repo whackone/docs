@@ -151,7 +151,6 @@ a > .hljs {
 /* Nav Icons */
 
 .nav-chapters {
-    font-size: 2.5em;
     text-align: center;
     text-decoration: none;
 
@@ -182,7 +181,6 @@ a > .hljs {
 }
 
 .mobile-nav-chapters {
-    font-size: 2.5em;
     text-align: center;
     text-decoration: none;
     width: 90px;
@@ -445,7 +443,6 @@ ul#searchresults span.teaser em {
 }
 
 .chapter {
-    font-family: "Noto Sans", sans-serif;
     list-style: none outside none;
     padding-left: 0;
     line-height: 2.2em;
@@ -465,7 +462,7 @@ ul#searchresults span.teaser em {
     text-decoration: none;
     color: var(--sidebar-fg);
     border-bottom: 1px solid rgba(0, 0, 0, 0);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .chapter li a:hover {
@@ -497,7 +494,11 @@ ul#searchresults span.teaser em {
 
 .chapter li.chapter-item {
     line-height: 1.5em;
-    margin-top: 1em;
+    margin-top: 2.5rem;
+}
+
+.chapter li.chapter-item strong {
+    font-weight: normal
 }
 
 .chapter li.expanded > a.toggle div {

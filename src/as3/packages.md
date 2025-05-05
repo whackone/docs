@@ -1,32 +1,18 @@
 # Packages
 
-ActionScript packages are used for organizing definitions.
+ActionScript packages are used for organizing definitions, using left-to-right hierarchic names.
 
 ```
-package {
-    // top-level package
+package { public var x = 10 }
 
-    // globally visible `x`
-    public var x = 10
-}
+package me.diantha { public var y = 15 }
 
-package a {
-    // `a` package.
-}
-
-package a.b {
-    // `a.b` package, subpackage of `a`.
-
-    public var y = 15
-}
-
-// lexical reference to top-level package's `x`
+// (top-level).x
 x
 
-import a.b.*;
+import me.diantha.*;
 
-// lexical reference to `a.b.y`
+// me.diantha.y
 y
-// fully qualified reference to `a.b.y`
-a.b.y
+me.diantha.y
 ```

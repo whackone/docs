@@ -119,13 +119,13 @@ Structural object types are compiled into efficient structures.
 }
 ```
 
-A single `...rest` component may appear as the last item, where `rest` must be another structural object type; the resulting type is a subtype of `rest`, and properties are not allowed to collide.
+`...rest` components may appear, where `rest` must be another structural object type; the resulting type may be a subtype of `rest` depending on whether properties do not collide.
 
 ```
-{
-    y:Number,
-    ...A
-}
+type A = { x:Number };
+type B = { y:Number, ...A };
+type U = { ...W, ...B };
+type W = { z:Number };
 ```
 
 ## Objects

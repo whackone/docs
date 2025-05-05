@@ -22,5 +22,5 @@
     - [Try](./as3/statements/try.md)
   - [Expressions](./as3/expressions.md)
     - [String literal](./as3/expressions/string.md)
-- [Display list](./display-list.md)
+- [Display List](./display-list.md)
   - [Points and scale factor](./display-list/points.md)

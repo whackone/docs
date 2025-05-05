@@ -12,7 +12,12 @@ package me.diantha.portfolio {
         return (
             <>
                 <j:VGroup xmlns:j="jet.components.**" gap={5}>
-                    <!-- markup -->
+                    <!-- some comment -->
+                    <j:Label>
+                        <markdown>
+                            Hi **there**.
+                        </markdown>
+                    </j:Label>
                 </j:VGroup>
             </>
         );
@@ -23,3 +28,19 @@ package me.diantha.portfolio {
 XML namespaces are used for importing packages solely within the markup, either non-recursive (`q.f.*`) or recursive (`q.f.**`). It is additionally allowed to use lexical names and fully qualified names like `<jet.components.HGroup>` as long as the component name is in scope.
 
 > **Note:** Unlike the E4X standard 2nd edition, markup does not result in `XML` or `XMLList` objects, but rather `ReactNode`; and there is support for `a` attributes without an attribute value, which equals `a={true}`.
+
+### Markdown
+
+Use `<markdown>` tags for translating Markdown to HyperText Markup Language (HTML) text.
+
+> **Note:** Tags nested with `<markdown>` must comply with XHTML tags; for instance, use `<br/>` instead of `<br>`.
+
+It is additionally allowed to interpolate HTML code inside a `<markdown>` tag using braces:
+
+```xml
+<markdown>
+    Hi, {personName}
+</markdown>
+```
+
+> **Note:** Interpolated parts must be in the HTML language (not XHTML or Markdown).

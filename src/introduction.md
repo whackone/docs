@@ -1,6 +1,6 @@
 # Introduction
 
-The Jet engine is a multi-media platform targetting the Go language. It supports an ECMAScript 4 like language, ActionScript 3; an eXtensible Markup Language for the user interface, MXML; and a Cascading Style Sheet 3 dialect.
+The Jet engine is a multi-media platform targetting WebAssembly. It supports an ECMAScript 4 like language, ActionScript 3; an eXtensible Markup Language for the user interface, MXML; and a Cascading Style Sheet 3 dialect.
 
 ## Features
 

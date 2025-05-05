@@ -6,10 +6,14 @@ In addition, the `IEventEmitter` interface may be implemented instead of extendi
 
 ## Defining an event emitter
 
-```as3
-/** Event "play". */
+```
+/**
+ * Event "play".
+ */
 [Event(name="play", type="Event")]
-/** The CN class. */
+/**
+ * The CN class.
+ */
 class CN extends EventEmitter {
     // constructor
     public function CN() {

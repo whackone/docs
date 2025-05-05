@@ -44,7 +44,7 @@ Number
 
 ## BigInt
 
-Big integer.
+Arbitrary range integer.
 
 ```
 BigInt

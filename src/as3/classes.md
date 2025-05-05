@@ -31,7 +31,7 @@ abstract class A {
 ## Static classes
 
 ```
-static class Namespace {
+static class MyNamespace {
     public static const VALUE:Number = 10.5;
 }
 ```

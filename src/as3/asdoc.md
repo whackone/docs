@@ -1,5 +1,7 @@
 # ASDoc
 
+Documentation comments use the format `/** */`, with lines optionally beginning with `*`.
+
 ## Supported tags
 
 ## \@copy

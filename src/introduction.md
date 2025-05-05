@@ -18,10 +18,9 @@ A productive package manager is supported which facilitates creating new project
 
 ## Comparison to JavaScript
 
-Vanilla JavaScript has some limitations, such as not being typed and not supporting documenting custom events properly unless JSDoc tags are used.
-
-JavaScript classes, to extend upon the other, require the base class to have been pre-evaluated by the JavaScript engine.
-
-TypeScript allows to define custom events through its extensive type system, but requires inheriting events from base classes manually through a rest operator.
+- Vanilla JavaScript ∉ typed
+- Vanilla JavaScript ∉ proper custom events
+- JavaScript ∈ immediate classes
+- TypeScript ∉ custom event inheritance (requires `...BaseClassEvents`)
 
 JavaScript or TypeScript are not well suited for interactive applications where reactive frameworks are not used; instead of reactivity, Jet uses a hierarchic component model in a Display List, which is inspired by Adobe Flex, and allows implementing UI components in MXML files.

@@ -14,3 +14,16 @@ switch (0) {
 ```
 
 The above prints "zero", not "zero" then "one".
+
+## Switch type
+
+```
+switch type (v) {
+    case (d:Date) {
+        //
+    }
+    default {
+        //
+    }
+}
+```

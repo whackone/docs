@@ -33,6 +33,7 @@ Event constructors must always take the event type as the first argument; any ot
 
 ```
 class SomeEvent extends Event {
+    // constructor
     public function SomeEvent(type: String) {
         super(type);
     }
@@ -44,7 +45,7 @@ class SomeEvent extends Event {
 The `EventEmitter#emit()` method is defined as follows:
 
 ```
-public function emit.<E extends this.MetaEvents::object>(e:E) : Boolean {
+public function emit.<E extends this.Event::object>(e:E) : Boolean {
     // code
 }
 ```
@@ -56,7 +57,7 @@ When the `emit()` method is used, it will force a `new E(...)` expression to be 
 The `EventEmitter#on()` method is roughly defined as follows:
 
 ```
-public function on.<E extends this.MetaEvents::type>(
+public function on.<E extends this.Event::type>(
     type: E.name,
     listener: function(E.type):void,
 ) : void {

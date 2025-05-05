@@ -14,6 +14,7 @@
   - [Conditional compilation](./as3/conditional-compilation.md)
   - [Asynchronous code](./as3/asynchronous-code.md)
   - [Statements](./as3/statements.md)
+    - [Import](./as3/statements/import.md)
     - [Switch](./as3/statements/switch.md)
     - [Try](./as3/statements/try.md)
 - [Display list](./display-list.md)

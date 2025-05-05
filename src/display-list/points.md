@@ -4,10 +4,9 @@ A point is a 1/72nd of an inch.
 
 ## Scale factor
 
-In the display list, all the points are affected by the global scale factor (`ScaleFactor#scale`).
+In the display list, all the point units are affected by the global scale factor (`ScaleFactor#scale`).
 
 ```
-// Handle scale factor change
 scaleFactor.on("change", function() {
     //
 });

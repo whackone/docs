@@ -22,12 +22,10 @@ null // null
 
 ## String
 
-String is a UTF-8 encoded sequence of characters.
-
-> **Note**: This data type differs from the standard ActionScript 3 string data type in the encoding.
+String is a UTF-16 encoded sequence of characters.
 
 ```
-String // UTF-8 encoded string
+String
 ```
 
 ## Boolean

@@ -15,6 +15,7 @@
   - [Asynchronous code](./as3/asynchronous-code.md)
   - [ECMAScript for XML](./as3/e4x.md)
   - [Statements](./as3/statements.md)
+    - [For..in](./as3/statements/for-in.md)
     - [Import](./as3/statements/import.md)
     - [Switch](./as3/statements/switch.md)
     - [Try](./as3/statements/try.md)

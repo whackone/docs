@@ -11,9 +11,9 @@ package me.diantha.portfolio {
     public function Portfolio() {
         return (
             <>
-                <j:HGroup xmlns:j="jet.components.**">
+                <j:VGroup xmlns:j="jet.components.**" gap={5}>
                     <!-- markup -->
-                </j:HGroup>
+                </j:VGroup>
             </>
         );
     }

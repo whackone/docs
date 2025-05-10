@@ -48,7 +48,7 @@ class SomeEvent extends Event {
 The `EventEmitter#emit()` method is defined as follows:
 
 ```
-public function emit.<E extends this.Event::object>(e:E) : Boolean {
+public function emit.<E extends Event(this,object)>(e:E) : Boolean {
     // code
 }
 ```
@@ -60,7 +60,7 @@ When the `emit()` method is used, it will force a `new E(...)` expression to be 
 The `EventEmitter#on()` method is roughly defined as follows:
 
 ```
-public function on.<E extends this.Event::type>(
+public function on.<E extends Event(this,type)>(
     type: E.name,
     listener: function(E.type):void,
 ) : void {

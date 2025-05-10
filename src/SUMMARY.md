@@ -1,7 +1,7 @@
 # Summary
 
 - [Introduction](./introduction.md)
-- [ActionScript language guide](./as3.md)
+- [ActionScript](./as3.md)
   - [Packages](./as3/packages.md)
   - [Types](./as3/types.md)
   - [Type conversion](./as3/type-conversion.md)

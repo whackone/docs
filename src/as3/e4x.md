@@ -8,6 +8,7 @@ XML markup is directly used in ActionScript 3 for rendering reactive UI componen
 
 ```
 package me.diantha.portfolio {
+    /** Portfolio */
     public function Portfolio() {
         return (
             <>
@@ -35,12 +36,17 @@ Use `<markdown>` tags for translating Markdown to HyperText Markup Language (HTM
 
 > **Note:** Tags nested with `<markdown>` must comply with XHTML tags; for instance, use `<br/>` instead of `<br>`.
 
-It is additionally allowed to interpolate HTML code inside a `<markdown>` tag using braces:
+It is additionally allowed to interpolate text or arbitrary markup inside a `<markdown>` tag:
 
 ```xml
 <markdown>
+    <!-- interpolate plain text -->
     Hi, {personName}
+
+    <!-- interpolate HTML -->
+    Hi, <?hypertext {personName}?>
+
+    <!-- interpolate Markdown (not XHTML) -->
+    Hi, <?markdown {personName}?>
 </markdown>
 ```
-
-> **Note:** Interpolated parts must be in the HTML language (not XHTML or Markdown).

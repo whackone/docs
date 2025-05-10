@@ -1,8 +1,8 @@
 # Introduction
 
-The Jet engine is a multi-media platform targetting WebAssembly. It supports an ECMAScript 4 like language, a very modified version of ActionScript 3; and a Cascading Style Sheet 3 dialect.
+Power your media.
 
-Unlike Adobe Flex, Jet uses reactive user interface.
+The Jet engine is a software development kit targetting WebAssembly. It supports an ECMAScript 4 like language, a very modified version of ActionScript 3; and a Cascading Style Sheet 3 dialect.
 
 ## Features
 

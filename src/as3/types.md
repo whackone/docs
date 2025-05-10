@@ -10,14 +10,16 @@ The `*` type means untyped, and accepts all possible values in the language.
 
 ## void
 
+undefined.
+
 ```
-void // undefined
+void
 ```
 
 ## null
 
 ```
-null // null
+null
 ```
 
 ## String
@@ -30,8 +32,10 @@ String
 
 ## Boolean
 
+`false` or `true`.
+
 ```
-Boolean // false or true
+Boolean
 ```
 
 ## Number
@@ -68,14 +72,18 @@ decimal
 
 ## int
 
+Signed 32-bit integer.
+
 ```
-int // signed 32-bit integer
+int
 ```
 
 ## uint
 
+Unsigned 32-bit integer.
+
 ```
-uint // unsigned 32-bit integer
+uint
 ```
 
 ## Tuple
@@ -118,10 +126,16 @@ Usage instance:
 
 ```
 const map = new Map.<String, Number>();
+
+// x=10
 map.x = 10;
 
 const fns = new Map.<String, Function>();
+
+// m=function
 fns.m = function() { return 10 };
+
+// m()
 trace(fns.call("m"));
 ```
 
@@ -144,9 +158,13 @@ Structural object types are compiled into efficient structures.
 `...rest` components may appear, where `rest` must be another structural object type; the resulting type may be a subtype of `rest` depending on whether properties do not collide.
 
 ```
+// A
 type A = { x:Number };
+// B
 type B = { y:Number, ...A };
+// U
 type U = { ...W, ...B };
+// W
 type W = { z:Number };
 ```
 

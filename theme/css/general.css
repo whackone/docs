@@ -118,7 +118,7 @@ h5 { font-size: 1em }
     max-width: var(--content-max-width);
 }
 .content p { line-height: 1.45em; }
-.content ol { line-height: 1.45em; }
+.content ol { line-height: 2.5em; }
 .content ul { line-height: 2.5em; }
 .content a { text-decoration: none; }
 .content a:hover { text-decoration: underline; }

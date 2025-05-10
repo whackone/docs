@@ -1,6 +1,6 @@
 # Introduction
 
-Media master. Target WebAssembly. Code in ActionScript.
+Media master. Target WebAssembly. Write in ActionScript.
 
 ## Features
 

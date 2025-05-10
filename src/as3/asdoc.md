@@ -1,6 +1,6 @@
 # ASDoc
 
-Documentation comments use the format `/** */`, with lines optionally beginning with `*`.
+Documentation comments use the format `/** */`, with lines optionally beginning with `*`. Markdown notation is supported in ASDoc comments.
 
 ## Local images
 

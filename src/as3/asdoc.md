@@ -2,6 +2,10 @@
 
 Documentation comments use the format `/** */`, with lines optionally beginning with `*`.
 
+## Local images
+
+ASDoc comments may refer to relative images.
+
 ## Supported tags
 
 ## \@copy

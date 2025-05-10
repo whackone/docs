@@ -13,7 +13,7 @@
   - [Embed](./as3/embed.md)
   - [Conditional compilation](./as3/conditional-compilation.md)
   - [Asynchronous code](./as3/asynchronous-code.md)
-  - [ECMAScript for XML](./as3/e4x.md)
+  - [E4X](./as3/e4x.md)
   - [ASDoc](./as3/asdoc.md)
   - [Statements](./as3/statements.md)
     - [For..in](./as3/statements/for-in.md)

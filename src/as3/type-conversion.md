@@ -2,7 +2,7 @@
 
 ## Optional conversion
 
-An optional conversion will return the default value of `T` on conversion value.
+An optional conversion will return the default value of `T` on conversion failure (such as `null` for most types).
 
 ```
 v as T

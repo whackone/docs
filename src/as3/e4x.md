@@ -1,4 +1,4 @@
-# ECMAScript for XML
+# E4X
 
 ECMAScript for XML (E4X) comprises XML markup and XML data manipulation facilities.
 

@@ -36,7 +36,7 @@ Event constructors must always take the event type as the first argument; any ot
 
 ```
 class SomeEvent extends Event {
-    // constructor
+    //
     public function SomeEvent(type: String) {
         super(type);
     }
@@ -49,7 +49,7 @@ The `EventEmitter#emit()` method is defined as follows:
 
 ```
 public function emit.<E extends Event(this,object)>(e:E) : Boolean {
-    // code
+    //
 }
 ```
 
@@ -64,6 +64,6 @@ public function on.<E extends Event(this,type)>(
     type: E.name,
     listener: function(E.type):void,
 ) : void {
-    // code
+    //
 }
 ```

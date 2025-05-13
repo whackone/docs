@@ -7,6 +7,8 @@
   - [Type conversion](./as3/type-conversion.md)
   - [Type matching](./as3/type-matching.md)
   - [Classes](./as3/classes.md)
+  - [Enums](./as3/enums.md)
+  - [Interfaces](./as3/interfaces.md)
   - [Namespaces](./as3/namespaces.md)
   - [Events](./as3/events.md)
   - [Environment variables](./as3/environment.md)

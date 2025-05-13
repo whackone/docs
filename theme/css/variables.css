@@ -17,10 +17,10 @@
 /* Themes */
 
 .ayu, .coal, .light, html:not(.js), .navy, .rust {
-    --bg: #000;
+    --bg: #222;
     --fg: #fff;
 
-    --sidebar-bg: #000;
+    --sidebar-bg: #222;
     --sidebar-fg: #fff;
     --sidebar-non-existant: #5c6773;
     --sidebar-active: #00cfba;

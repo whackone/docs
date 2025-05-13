@@ -34,7 +34,7 @@ a > .hljs {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--bg);
+    /* background-color: var(--bg); */
     border-block-end-color: var(--bg);
     border-block-end-width: 1px;
     border-block-end-style: solid;
@@ -168,7 +168,7 @@ html:not(.js) .left-buttons button {
     text-decoration: none;
     width: 90px;
     border-radius: 5px;
-    background-color: var(--sidebar-bg);
+    /* background-color: var(--sidebar-bg); */
 }
 
 /* Only Firefox supports flow-relative values */
@@ -417,13 +417,13 @@ ul#searchresults span.teaser em {
     box-sizing: border-box;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior-y: contain;
-    background-color: var(--sidebar-bg);
+    /* background-color: var(--sidebar-bg); */
     color: var(--sidebar-fg);
 }
 .sidebar-iframe-inner {
     --padding: 10px;
 
-    background-color: var(--sidebar-bg);
+    /* background-color: var(--sidebar-bg); */
     padding: var(--padding);
     margin: 0;
     font-size: 1.4rem;

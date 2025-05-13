@@ -11,7 +11,7 @@
     --menu-bar-height: 50px;
     --font: "Open Sans", "Segoe UI", sans-serif;
     --mono-font: "Courier Prime", "Courier New", monospace;
-    --code-font-size: 0.79em; /* please adjust the ace font size accordingly in editor.js */
+    --code-font-size: 0.75em; /* please adjust the ace font size accordingly in editor.js */
 }
 
 /* Themes */
@@ -32,8 +32,6 @@
     --icons-hover: #b7b9cc;
 
     --links: #0096cf;
-
-    --header: #00cfba;
 
     --inline-code-color: #fff;
 

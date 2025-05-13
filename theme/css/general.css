@@ -132,11 +132,6 @@ h5 { font-size: 1em }
     text-decoration: none;
 }
 
-.content .header:link,
-.content .header:visited {
-    color: var(--header);
-}
-
 table {
     margin: 0 auto;
     border-collapse: collapse;

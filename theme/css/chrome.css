@@ -568,14 +568,14 @@ html:not(.sidebar-resizing) .sidebar {
 
 .chapter li.chapter-item {
     line-height: 1.5em;
-    margin-block-start: 1.3em;
-    text-transform: lowercase;
-    font-weight: lighter;
-    font-size: 1.3em;
+    margin-block-start: 1.9em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9em;
 }
 
 .chapter li.chapter-item strong {
-    font-weight: lighter;
+    font-weight: bold;
 }
 
 .chapter li.expanded > a.toggle div {

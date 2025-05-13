@@ -14,7 +14,7 @@ html {
     -webkit-text-size-adjust: none;
 }
 
-body {
+html {
     background-image: url("../background-flag.png");
     background-repeat: no-repeat;
     background-position: center;

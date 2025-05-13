@@ -16,6 +16,7 @@
   - [E4X](./as3/e4x.md)
   - [ASDoc](./as3/asdoc.md)
   - [Statements](./as3/statements.md)
+    - [Enum](./as3/statements/enum.md)
     - [For..in](./as3/statements/for-in.md)
     - [Import](./as3/statements/import.md)
     - [Switch](./as3/statements/switch.md)

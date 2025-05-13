@@ -172,4 +172,10 @@ type W = { z:Number };
 
 All types except `void`, `null`, `uint`, `int`, `float`, `Number`, `decimal`, `BigInt` and `Boolean` represent referenceable objects that may be `null`. The `Object` class is inherited by all types, except `*`, `void`, `null` and unions.
 
+**Dynamic properties**
+
 The `Object` class, unlike in standard ActionScript, is not untyped and there is no support for `dynamic` classes; therefore, it is preferable to use the `*` type when it is necessary to access prototype properties such as `constructor` and `toString()`.
+
+```
+(obj as *).constructor
+```

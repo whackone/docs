@@ -8,6 +8,13 @@ By default a class extends `Object`. Use the `extends` clause for extending a sp
 class B extends A {}
 ```
 
+Use the `implements` clause for implementing interfaces.
+
+```
+class A1 implements I1, I2 {}
+class A2 extends A implements I1, I2 {}
+```
+
 ## Constructor
 
 By default the constructor is based in the base class's constructor and will initialize the instance with default property values.

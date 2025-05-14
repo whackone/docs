@@ -25,14 +25,6 @@ Copies documentation comment from another definition. Use a `#x` component to re
 @deprecated [Description]
 ```
 
-### \@internal
-
-Internal comment for an item (not included in the generated documentation).
-
-```plain
-@internal Comment.
-```
-
 ### \@inheritDoc
 
 Inherits documentation from base class or base class's item.
@@ -41,12 +33,12 @@ Inherits documentation from base class or base class's item.
 @inheritDoc
 ```
 
-### \@see
+### \@internal
 
-Where `item` maybe an item reference with optional `#x` instance property, or just an instance property `#x`.
+Internal comment for an item (not included in the generated documentation).
 
 ```plain
-@see item [Display text]
+@internal Comment.
 ```
 
 ### \@param
@@ -67,6 +59,14 @@ Hides an item from the generated documentation.
 
 ```plain
 @return Description
+```
+
+### \@see
+
+Where `item` maybe an item reference with optional `#x` instance property, or just an instance property `#x`.
+
+```plain
+@see item [Display text]
 ```
 
 ### \@throws

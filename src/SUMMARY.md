@@ -26,4 +26,4 @@
   - [Expressions](./as3/expressions.md)
     - [String literal](./as3/expressions/string.md)
 - [Display List](./display-list.md)
-  - [Points and scale factor](./display-list/points.md)
+  - [Pixels and scale factor](./display-list/pixels.md)

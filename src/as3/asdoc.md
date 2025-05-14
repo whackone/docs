@@ -8,7 +8,7 @@ ASDoc comments may refer to relative images.
 
 ## Supported tags
 
-## \@copy
+### \@copy
 
 Copies documentation comment from another definition. Use a `#x` component to refer to an instance property.
 
@@ -19,13 +19,13 @@ Copies documentation comment from another definition. Use a `#x` component to re
 @copy #x
 ```
 
-## \@deprecated
+### \@deprecated
 
 ```plain
 @deprecated [Description]
 ```
 
-## \@internal
+### \@internal
 
 Internal comment for an item (not included in the generated documentation).
 
@@ -33,7 +33,7 @@ Internal comment for an item (not included in the generated documentation).
 @internal Comment.
 ```
 
-## \@inheritDoc
+### \@inheritDoc
 
 Inherits documentation from base class or base class's item.
 
@@ -41,7 +41,7 @@ Inherits documentation from base class or base class's item.
 @inheritDoc
 ```
 
-## \@see
+### \@see
 
 Where `item` maybe an item reference with optional `#x` instance property, or just an instance property `#x`.
 
@@ -49,13 +49,13 @@ Where `item` maybe an item reference with optional `#x` instance property, or ju
 @see item [Display text]
 ```
 
-## \@param
+### \@param
 
 ```plain
 @param paramName Description
 ```
 
-## \@private
+### \@private
 
 Hides an item from the generated documentation.
 
@@ -63,13 +63,13 @@ Hides an item from the generated documentation.
 @private
 ```
 
-## \@return
+### \@return
 
 ```plain
 @return Description
 ```
 
-## \@throws
+### \@throws
 
 ```plain
 @throws ClassName [Description]

@@ -4,7 +4,7 @@ ECMAScript for XML (E4X) comprises XML markup and XML data manipulation faciliti
 
 ## Markup
 
-XML markup is directly used in ActionScript 3 for rendering reactive UI components.
+XML markup is directly used in ActionScript for rendering reactive user interface.
 
 ```
 package me.diantha.portfolio {

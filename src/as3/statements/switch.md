@@ -10,10 +10,13 @@ switch (0) {
     case 1: {
         trace("one");
     }
+    default: {
+        trace("anything else");
+    }
 }
 ```
 
-The above prints "zero", not "zero" then "one".
+The above prints only "zero", not "zero", then "one" and "anything else".
 
 ## Switch type
 

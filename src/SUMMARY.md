@@ -27,6 +27,7 @@
     - [Switch](./as3/statements/switch.md)
     - [Try](./as3/statements/try.md)
   - [Expressions](./as3/expressions.md)
+    - [Filter expression](./as3/expressions/filter.md)
     - [String literal](./as3/expressions/string.md)
     - [Yield expression](./as3/expressions/yield.md)
 - [Display List](./display-list.md)

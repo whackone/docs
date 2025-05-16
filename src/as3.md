@@ -24,7 +24,7 @@ The `in` operator behaves differently. It triggers `jet_proxy::has()` which is i
 
 ### Filter operator
 
-The filter operator has been modified to take a local (`.(local_name, test)`) rather than cluttering the lexical scope.
+The filter operator has been modified to take a local (`.(pattern_name, test)`) rather than cluttering the lexical scope.
 
 ```
 xnode.(o, o.@x.startsWith("abc"))

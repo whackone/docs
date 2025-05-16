@@ -26,6 +26,8 @@ jet_proxy function values():Iterator.<T> {
 
 ## jet_proxy::get()
 
+> **Note**: Overriding the property accessor with a possibly `String` or `QName` key type (including base types `*` and `Object`) will override all names (like `.x`), except when calling a method (like `.m()`).
+
 ```
 jet_proxy function get(key:K):V {
     //
@@ -34,6 +36,8 @@ jet_proxy function get(key:K):V {
 
 ## jet_proxy::set()
 
+> **Note**: Overriding the property accessor with a possibly `String` or `QName` key type (including base types `*` and `Object`) will override all names (like `.x`), except when calling a method (like `.m()`).
+
 ```
 jet_proxy function set(key:K, value:V):void {
     //
@@ -41,6 +45,8 @@ jet_proxy function set(key:K, value:V):void {
 ```
 
 ## jet_proxy::delete()
+
+> **Note**: Overriding the property accessor with a possibly `String` or `QName` key type (including base types `*` and `Object`) will override all names (like `.x`), except when calling a method (like `.m()`).
 
 ```
 jet_proxy function delete(key:K):Boolean {
@@ -84,6 +90,16 @@ Overrides the behavior of the `delete (...).@k` accessor.
 
 ```
 jet_proxy function deleteAttribute(key:K):Boolean {
+    //
+}
+```
+
+## jet_proxy::filter()
+
+Overrides the behavior of the filter operator (`.(e, test)`).
+
+```
+jet_proxy function filter(testFn:function(T):Boolean):E {
     //
 }
 ```

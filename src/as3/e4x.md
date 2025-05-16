@@ -15,7 +15,7 @@ package me.diantha.portfolio {
         return (
             <>
                 <j:VGroup gap={5}>
-                    <!-- some comment -->
+                    <!-- content -->
                     <j:Label>
                         <markdown>
                             Hi **there**.

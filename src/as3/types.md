@@ -143,7 +143,7 @@ trace(fns.call("m"));
 
 ## Structural object
 
-Structural object types are compiled into efficient structures.
+Structural object types are compiled into efficient structures. Any objects that is compatible with a structural object type will be implicitly converted to it, resulting into a new object.
 
 ```
 {

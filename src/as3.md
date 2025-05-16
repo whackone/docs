@@ -2,7 +2,7 @@
 
 Jet uses the ActionScript 3 language, fine-tuned.
 
-## Changed/removed features
+## Changed features
 
 ### Include directive
 

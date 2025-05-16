@@ -5,14 +5,30 @@ Interfaces are non opaque types that may be implemented by classes through the `
 ```
 interface I {
     //
-    public function m() : void;
+    function m() : void;
 
     //
-    public function get x() : Number;
-    public function set x(value);
+    function get x() : Number;
+    function set x(value);
 }
 
 interface Ia extends I {}
 ```
 
-All interface methods must omit the body.
+Interface methods may omit the body, being classified as *provided methods*:
+
+```
+interface I {
+    function m() {
+        //
+    }
+}
+```
+
+Interface methods may have an access modifier that is allowed to be an user namespace such as `jet_proxy`.
+
+```
+interface I {
+    jet_proxy function get(key:String):String;
+}
+```

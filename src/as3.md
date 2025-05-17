@@ -11,6 +11,7 @@ The `String` type stores an UTF-8 encoded text, not an UTF-16 encoded text.
 - Use `.length` for getting the string's byte count.
 - Use `.charAt()` and `.charCodeAt()` for reading an UTF-8 code point at the specified byte offset.
 - Use `.byteAt()` for getting the byte at the specified byte offset.
+- Use `.bytes()` to create an iterator over the UTF-8 bytes.
 - Use `.chars()` to create a flexible iterator over the Unicode Code Points.
 - Use `.chars().length()` for getting the total of Unicode Code Points.
 

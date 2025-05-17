@@ -9,6 +9,7 @@
   - [Classes](./as3/classes.md)
   - [Enums](./as3/enums.md)
   - [Interfaces](./as3/interfaces.md)
+  - [Meta-data](./as3/metadata.md)
   - [Generics](./as3/generics.md)
   - [Namespaces](./as3/namespaces.md)
   - [Events](./as3/events.md)

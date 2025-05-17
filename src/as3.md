@@ -4,6 +4,15 @@ Jet uses the ActionScript 3 language, fine-tuned.
 
 ## Changed features
 
+### String type
+
+The `String` type stores Unicode Code Points (UTF-32), not UTF-16 code units.
+
+```
+const s = "\u{10000}a";
+assert( s.charCodeAt(1) == "a".charCodeAt(0) );
+```
+
 ### Include directive
 
 The `include` directive is not implemented in Jet.
@@ -33,3 +42,11 @@ xnode.(o, o.@x.startsWith("abc"))
 ### With statement
 
 The with statement is not implemented since using it with dynamic types such as `XML` clutters the lexical scope.
+
+### “this” capture
+
+The `this` object is always captured from the parent activation in nested activations; there is no way to override the `this` object with another value.
+
+### Available packages
+
+Available packages depend on the dependencies table of the Jet manifest. Jet will not make undepended package definitions part of the program; `as3.lang` and `jet.base` are always part of the program.

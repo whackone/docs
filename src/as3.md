@@ -6,12 +6,13 @@ Jet uses the ActionScript 3 language, fine-tuned.
 
 ### String type
 
-The `String` type stores Unicode Code Points (UTF-32), not UTF-16 code units.
+The `String` type stores an UTF-8 encoded text, not an UTF-16 encoded text.
 
-```
-const s = "\u{10000}a";
-assert( s.charCodeAt(1) == "a".charCodeAt(0) );
-```
+- Use `.length` for getting the string's byte count.
+- Use `.charAt()` and `.charCodeAt()` for reading an UTF-8 code point at the specified byte offset.
+- Use `.byteAt()` for getting the byte at the specified byte offset.
+- Use `.chars()` to create a flexible iterator over the Unicode Code Points.
+- Use `.chars().length()` for getting the total of Unicode Code Points.
 
 ### Include directive
 

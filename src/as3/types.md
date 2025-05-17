@@ -24,7 +24,7 @@ null
 
 ## String
 
-String is a sequence of Unicode Code Points.
+String is a UTF-8 encoded character sequence.
 
 ```
 String

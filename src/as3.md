@@ -12,7 +12,7 @@ The `String` type stores an UTF-8 encoded text, not an UTF-16 encoded text.
 - Use `.charAt()` and `.charCodeAt()` for reading an UTF-8 code point at the specified byte offset.
 - Use `.byteAt()` for getting the byte at the specified byte offset.
 - Use `.bytes()` to create an iterator over the UTF-8 bytes.
-- Use `.chars()` to create a flexible iterator over the Unicode Code Points.
+- Use `.chars()` to create an iterator over the Unicode Code Points. Provides manual skipping, index control, peeking, taking or peeking a number of code points, EOF checking and more.
 - Use `.chars().length()` for getting the total of Unicode Code Points.
 
 ### Include directive

@@ -6,7 +6,7 @@
 
 ## jet_proxy::keys()
 
-Must return an `Iterator.<T>` object. Used by the `for..in` statement.
+Part of the `IterableKeys.<T>` interface. Must return an `Iterator.<T>` object. Used by the `for..in` statement.
 
 ```
 jet_proxy function keys():Iterator.<T> {
@@ -16,7 +16,7 @@ jet_proxy function keys():Iterator.<T> {
 
 ## jet_proxy::values()
 
-Must return an `Iterator.<T>` object. Used by the `for each..in` statement.
+Part of the `IterableValues.<T>` interface. Must return an `Iterator.<T>` object. Used by the `for each..in` statement.
 
 ```
 jet_proxy function values():Iterator.<T> {

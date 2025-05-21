@@ -48,7 +48,3 @@ The with statement is not implemented since using it with dynamic types such as 
 ### “this” capture
 
 The `this` object is always captured from the parent activation in nested activations; there is no way to override the `this` object with another value.
-
-### Available packages
-
-Available packages depend on the dependencies table of the Jet manifest. Jet will not make undepended package definitions part of the program; `as3.lang` and `jet.base` are always part of the program.

@@ -143,7 +143,7 @@ trace(fns.call("m"));
 
 ## Structural object
 
-Structural object types are compiled into efficient structures. Note that structural object types have sensitive field order; thus, structural object types with equivalent fields but in different orders will be incompatible.
+Structural object types are compiled into efficient structures. Note that structural object types have sensitive field order; thus, structural object types with equivalent fields but in different orders will be incompatible. Structural object types also have sensitive ASDoc comments, so they may be incompatible depending on them.
 
 Two structural object types are compatible only if either a) one is used as a subset of another or b) fields are equivalent and consist of the same order and the same ASDoc comments.
 

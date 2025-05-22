@@ -143,7 +143,7 @@ trace(fns.call("m"));
 
 ## Structural object
 
-Structural object types are compiled into efficient structures. Any objects that is compatible with a structural object type will be implicitly converted to it, resulting into a new object.
+Structural object types are compiled into efficient structures. Note that structural object types have sensitive field order; thus, structural object types with equivalent fields but in different orders will be incompatible.
 
 ```
 {
@@ -155,7 +155,7 @@ Structural object types are compiled into efficient structures. Any objects that
 }
 ```
 
-`...rest` components may appear, where `rest` must be another structural object type; the resulting type may be a subtype of `rest` depending on whether properties do not collide.
+`...rest` components may appear, where `rest` must be another structural object type; the resulting type may be a subtype of `rest` depending on whether properties do not collide and there is only one rest component and it appears at the beginning.
 
 ```
 // A

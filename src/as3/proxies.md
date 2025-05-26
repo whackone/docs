@@ -96,7 +96,7 @@ jet_proxy function deleteAttribute(key:K):Boolean {
 
 ## jet_proxy::filter()
 
-Overrides the behavior of the filter operator (`.(pattern_name, test)`).
+Overrides the behavior of the filter operator (`.(pattern; test)`).
 
 ```
 jet_proxy function filter(testFn:function(T):Boolean):E {

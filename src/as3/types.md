@@ -176,8 +176,10 @@ All types except `void`, `null`, `uint`, `int`, `float`, `Number`, `decimal`, `B
 
 **Dynamic properties**
 
-The `Object` class, unlike in standard ActionScript, is not untyped and there is no support for `dynamic` classes; therefore, it is preferable to use the `*` type when it is necessary to access prototype properties such as `constructor` and `toString()`.
+The `Object` class, unlike in standard ActionScript, is not untyped and there is no support for `dynamic` classes.
+
+When it is necessary to read the constructor of an object, use:
 
 ```
-(obj as *).constructor
+Reflect.constructor(obj)
 ```

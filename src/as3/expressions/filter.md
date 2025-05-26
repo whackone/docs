@@ -1,7 +1,7 @@
 # Filter expression
 
 ```
-o.(pattern, test)
+o.(pattern; test)
 ```
 
 Instance usage:

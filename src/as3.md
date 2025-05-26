@@ -25,9 +25,16 @@ The `default xml namespace =` E4X statement is not implemented in Jet due to Web
 
 ### Object dynamicness
 
-The `Object` type is not dynamic per se, nor are there dynamic classes. Only the `*` type is dynamic.
+The `Object` type is not dynamic per se, nor are there dynamic classes, nor are there legacy ECMAScript `prototype` objects. Only the `*` type is dynamic.
 
 - Methods such as `str.match` therefore return an object slightly different than the standard, since `Array` can't be attached properties such as `index`.
+- Instead of `(o as Object).constructor` you do `Reflect.constructor(o)`.
+- Methods such as `toString()` and `valueOf()` are defined in `Object` without `prototype`. This implies the language allows to override methods with additional optional parameters (including the rest parameter) and a more contravariant result type.
+
+### Overriding methods
+
+- Instance methods may override another method and include additional optional parameters (including the rest parameter).
+- Instance methods may override another method and return a more contravariant result type.
 
 ### “in” operator
 
@@ -35,10 +42,10 @@ The `in` operator behaves differently. It triggers `jet_proxy::has()` which is i
 
 ### Filter operator
 
-The filter operator has been modified to take a local (`.(pattern_name, test)`) rather than cluttering the lexical scope.
+The filter operator has been modified to take a binding name (`.(pattern; test)`) rather than cluttering the lexical scope with dynamic names.
 
 ```
-xnode.(o, o.@x.startsWith("abc"))
+xnode.(o; o.@x.startsWith("abc"))
 ```
 
 ### With statement

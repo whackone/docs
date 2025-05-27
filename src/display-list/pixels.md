@@ -1,10 +1,10 @@
 # Pixels and scale factor
 
-Pixels are the main positioning unit used in the Jet engine.
+Pixels are the main positioning unit used in the Display List.
 
 ## Scale factor
 
-In the display list, all the pixel positions and sizes are affected by the global scale factor.
+In the Display List, all the pixel positions and sizes are influenced by the global scale factor.
 
 ```
 scaleFactor.on("change", function() {

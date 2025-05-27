@@ -88,8 +88,6 @@ uint
 
 ## Tuple
 
-Tuples, when untyped, have the `length` property available.
-
 ```
 [T1, T2]
 ```

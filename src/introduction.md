@@ -1,3 +1,3 @@
 # Introduction
 
-Media master. Write in [ShockScript](https://shockscript.github.io/ls/). Target native apps.
+Media master. Create apps using the [ShockScript](https://shockscript.github.io/ls/) language.

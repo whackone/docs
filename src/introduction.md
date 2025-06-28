@@ -1,3 +1,3 @@
 # Introduction
 
-Media master. Create apps using the [ShockScript](https://shockscript.github.io/ls/) language.
+Create rich internet applications using the [ShockScript](https://shockscript.github.io/ls/) language.
